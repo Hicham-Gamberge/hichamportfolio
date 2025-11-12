@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page de démarrage - Portfolio BTS SIO - Prénom NOM</title>
+    <meta
+      name="description"
+      content="Page de démarrage simplifiée du portfolio BTS SIO."
+    />
+
+    <!-- Styles intégrés très simples pour éviter les dépendances externes -->
+    <style>
+      /* Style minimal et lisible */
+      :root {
+        --primary: #0d6efd;
+        --muted: #666;
+      }
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+        line-height: 1.6;
+        margin: 0;
+        color: #222;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 1rem;
+      }
+      header {
+        background: var(--primary);
+        color: #fff;
+        padding: 1rem;
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+        font-weight: 600;
+      }
+      main {
+        padding: 1.5rem;
+      }
+      footer {
+        background: #f8f9fa;
+        padding: 1rem;
+        text-align: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+      h1,
+      h2,
+      h3 {
+        margin: 0 0 0.5rem 0;
+      }
+      p {
+        margin: 0.5rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- En-tête simple : nom du portfolio et navigation principale -->
+    <header>
+      <div class="container">
+        <h1>Portfolio BTS SIO - Prénom NOM</h1>
+        <!-- Navigation claire et concise -->
+        <nav aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="resume.html">CV</a>
+          <a href="portfolio.html">Projets</a>
+          <a href="veille.html">Veille</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Contenu principal allégé et commenté -->
+    <main class="container">
+      <!-- Titre de la page -->
+      <h2>Page de démarrage</h2>
+      <!-- Petit paragraphe expliquant l'objectif -->
+      <p>
+        Cette page a été simplifiée pour être facile à lire et à modifier : pas
+        d'images, structure claire, et commentaires en français.
+      </p>
+
+      <!-- Exemple de section : remplacez par votre contenu réel -->
+      <section>
+        <h3>Zone de contenu</h3>
+        <p>
+          Remplacez ce texte par vos propres sections : parcours, projets,
+          compétences, ou toute autre information demandée pour le BTS SIO.
+        </p>
+      </section>
+    </main>
+
+    <!-- Pied de page simple avec rappel de personnalisation -->
+    <footer>
+      <div class="container">
+        <p>© Portfolio BTS SIO - Prénom NOM — Tous droits réservés</p>
+        <p style="font-size: 0.85rem; color: var(--muted)">
+          Remplacez les informations de contact avant publication.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Script minimal : ici on garde juste un commentaire expliquant l'usage -->
+    <script>
+      /*
+        Script volontairement minimal.
+        - Ajoutez ici une gestion du menu mobile si nécessaire.
+        - Ce site a été simplifié : pas de dépendances JS externes.
+      */
+      (function () {
+        // Exemple : notifier dans la console pour les petits écrans
+        if (
+          window.matchMedia &&
+          window.matchMedia("(max-width:600px)").matches
+        ) {
+          console.log(
+            "Affichage mobile détecté — pensez à ajouter un menu adapté."
+          );
+        }
+      })();
+    </script>
+  </body>
+</html>
