@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
@@ -65,141 +65,171 @@
       <section id="veille" class="section">
         <div class="container">
           <article class="mb-5">
-            <h2>Veille informationnelle : Le phishing</h2>
+            <h2>
+              Veille informationnelle : La cybersécurité dans le développement
+              web
+            </h2>
             <p>
-              <strong>Qu'est-ce que le phishing ?</strong>
+              <strong>Problématique :</strong> Face à la multiplication des
+              cybermenaces et des vulnérabilités critiques dans les applications
+              web, les développeurs doivent intégrer la sécurité dès les
+              premières étapes du développement. Comment identifier, prévenir et
+              corriger les failles les plus courantes tout en respectant les
+              réglementations en vigueur ?
             </p>
             <p>
-              Le phishing est une arnaque en ligne où des personnes
-              malveillantes envoient de faux messages (e-mails, SMS, appels)
-              pour obtenir des informations confidentielles comme des mots de
-              passe ou des numéros de carte bancaire. Ces messages semblent
-              provenir de services ou d'entreprises légitimes pour inciter les
-              victimes à divulguer leurs données ou à cliquer sur des liens
-              malveillants. Ne jamais partager d'informations sensibles en
-              réponse à des messages douteux et éviter de cliquer sur des liens
-              inconnus.
-            </p>
-          </article>
-
-          <article class="mb-5">
-            <h3>Les différents types de phishing</h3>
-            <ul>
-              <li>
-                <strong>Email phishing :</strong> le plus courant, via e-mail.
-              </li>
-              <li>
-                <strong>Spear phishing :</strong> ciblé (personne ou
-                entreprise).
-              </li>
-              <li>
-                <strong>Whaling :</strong> ciblage des cadres ou dirigeants.
-              </li>
-              <li><strong>Smishing :</strong> via SMS.</li>
-              <li>
-                <strong>Vishing :</strong> par appel vocal (voicemail, faux
-                support).
-              </li>
-              <li>
-                <strong>Clone phishing :</strong> copie d'un message légitime
-                avec un lien modifié.
-              </li>
-              <li>
-                <strong>Pharming :</strong> redirection vers de faux sites via
-                DNS ou malware.
-              </li>
-            </ul>
-            <p>
-              Exemples d'articles : <a href="#">Article</a> —
-              <a href="#">Article</a> — <a href="#">Article</a>
+              Cette veille traite les enjeux majeurs de la cybersécurité web :
+              vulnérabilités applicatives, sécurisation des authentifications,
+              protection des données sensibles, et les bonnes pratiques
+              DevSecOps pour construire des applications robustes et conformes.
             </p>
           </article>
 
           <article class="mb-5">
-            <h3>Impact du phishing</h3>
+            <h3>OWASP Top 10 2024</h3>
+            <h3>
+              Injection SQL et XSS : les vulnérabilités au cœur des attaques web
+            </h3>
             <p>
-              Le phishing peut entraîner des pertes financières, le vol
-              d'identité, des violations de données et des conséquences majeures
-              pour les entreprises (pertes de clients, atteinte à la réputation,
-              coûts de remédiation). Certaines attaques célèbres ont coûté des
-              millions d'euros et exposé des informations sensibles.
+              L'OWASP Top 10 2024 identifie les 10 vulnérabilités web les plus
+              critiques. Les injections SQL et les failles XSS (Cross-Site
+              Scripting) restent les plus exploitées, permettant aux attaquants
+              d'accéder à des données sensibles et de prendre le contrôle des
+              sessions utilisateurs. La validation des entrées est essentielle.
             </p>
-            <p>
-              Lectures recommandées :
-              <a href="#">Qu’est-ce que le phishing et quel est son impact ?</a>
-              — <a href="#">Les 5 plus grandes attaques</a>
-            </p>
+            <a href="https://owasp.org/www-project-top-ten/" target="_blank"
+              >Consulter le classement OWASP Top 10 2024</a
+            >
           </article>
 
           <article class="mb-5">
-            <h3>Comment se protéger</h3>
-            <ol>
-              <li>
-                Ne cliquez pas sur les liens suspects et ne téléchargez pas de
-                pièces jointes inconnues.
-              </li>
-              <li>
-                Vérifiez l'adresse de l'expéditeur et survolez les liens avant
-                de cliquer.
-              </li>
-              <li>
-                Activez l'authentification à facteurs (MFA) quand c'est
-                possible.
-              </li>
-              <li>
-                Utilisez des gestionnaires de mots de passe et des mots de passe
-                uniques.
-              </li>
-              <li>Mettez à jour régulièrement vos systèmes et logiciels.</li>
-              <li>
-                Former les employés : campagnes de sensibilisation et exercices
-                de simulation.
-              </li>
-            </ol>
+            <h3>Sécurisation des API REST</h3>
+            <h3>
+              Protéger les API contre l'authentification faible et les accès non
+              autorisés
+            </h3>
             <p>
-              Guides pratiques :
-              <a href="#">Comment se protéger du phishing : 10 façons</a> —
-              <a href="#">Comment se prémunir contre l'hameçonnage ?</a>
+              Les API RESTful sont des vecteurs d'attaque majeurs. Une
+              authentification et une autorisation inadéquates exposent les
+              données. Les spécifications OAuth 2.0 et OpenID Connect sont
+              essentielles. L'utilisation de tokens JWT, le rate limiting et la
+              validation des requêtes diminuent les risques d'exploitation.
             </p>
+            <a
+              href="https://owasp.org/www-project-api-security/"
+              target="_blank"
+              >OWASP API Security Top 10</a
+            >
           </article>
 
           <article class="mb-5">
-            <h3>Outil de veille et simulation : GoPhish</h3>
+            <h3>
+              Authentification multi-facteurs (MFA) et gestion des identités
+            </h3>
+            <h3>Renforcer l'authentification au-delà du simple mot de passe</h3>
             <p>
-              <strong>GoPhish</strong> est un outil open-source conçu pour
-              simuler des attaques de phishing afin d'évaluer et d'entraîner les
-              employés d'une organisation. Il permet de créer des campagnes, des
-              pages de phishing et des rapports pour mesurer la vulnérabilité
-              humaine.
+              L'authentification multi-facteurs réduit drastiquement les risques
+              de compromission de compte. La mise en place de TOTP (Time-based
+              One-Time Password), de biométrie ou de clés de sécurité FIDO2 est
+              désormais critique. La gestion centralisée des identités via des
+              services comme Keycloak ou Auth0 simplifie la sécurité.
             </p>
-            <p>
-              Site officiel :
-              <a href="https://getgophish.com" target="_blank" rel="noopener"
-                >getgophish.com</a
-              >
-            </p>
+            <a
+              href="https://www.nist.gov/publications/special-publication-800-63-3"
+              target="_blank"
+              >NIST Digital Identity Guidelines</a
+            >
           </article>
 
           <article class="mb-5">
-            <h3>Ressources et lectures</h3>
-            <ul>
-              <li>
-                <a href="#"
-                  >Hameçonnage / Phishing : les 10 différents types
-                  d’attaques</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >3 conséquences méconnues des attaques de phishing</a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  >Ces attaques de phishing qui ont coûté des millions</a
-                >
-              </li>
-            </ul>
+            <h3>Sécurité des frameworks modernes</h3>
+            <h3>
+              React, Node.js et Laravel : vulnérabilités et bonnes pratiques
+            </h3>
+            <p>
+              Chaque framework pose des défis spécifiques. React doit gérer
+              l'injection XSS dans le DOM, Node.js doit sécuriser les
+              dépendances npm, Laravel doit protéger ses routes contre les CSRF.
+              Les mises à jour régulières, l'audit des dépendances avec outils
+              comme Snyk et SonarQube, et le suivi des CVE sont indispensables.
+            </p>
+            <a href="https://snyk.io" target="_blank"
+              >Snyk - Plateforme de sécurité des dépendances</a
+            >
+          </article>
+
+          <article class="mb-5">
+            <h3>Vulnérabilités récentes et CVE critiques 2024-2026</h3>
+            <h3>
+              Exploits qui ont marqué l'industrie : Log4Shell, Heartbleed,
+              0-days
+            </h3>
+            <p>
+              Les vulnérabilités comme Log4Shell (CVE-2021-44228) ont exposé des
+              millions de serveurs. En 2024-2026, les 0-days dans les
+              dépendances populaires et les cloud providers restent une menace
+              majeure. La surveillance proactive des CVE et les patches de
+              sécurité immédiats sont critiques pour la continuité des services.
+            </p>
+            <a href="https://nvd.nist.gov" target="_blank"
+              >National Vulnerability Database (NVD)</a
+            >
+          </article>
+
+          <article class="mb-5">
+            <h3>RGPD et protection des données personnelles</h3>
+            <h3>
+              Conformité légale et impact commercial de la protection des
+              données
+            </h3>
+            <p>
+              Le RGPD impose le chiffrement des données sensibles, le droit à
+              l'oubli et la minimisation des données collectées. Les amendes
+              peuvent atteindre 4% du chiffre d'affaires. Le Privacy by Design
+              doit être intégré au développement. Les audits réguliers et la
+              documentation des traitements sont obligatoires.
+            </p>
+            <a href="https://www.cnil.fr" target="_blank"
+              >CNIL - Commission Nationale de l'Informatique et des Libertés</a
+            >
+          </article>
+
+          <article class="mb-5">
+            <h3>DevSecOps : intégrer la sécurité dans le CI/CD</h3>
+            <h3>
+              Automatiser les tests de sécurité sans ralentir les déploiements
+            </h3>
+            <p>
+              DevSecOps intègre les contrôles de sécurité dans chaque étape du
+              pipeline CI/CD. Les outils comme SonarQube (analyse statique),
+              Trivy (scan des conteneurs) et Burp Suite (tests dynamiques)
+              détectent les failles avant la production. L'Infrastructure as
+              Code doit aussi être sécurisée via des outils comme Terraform
+              Cloud.
+            </p>
+            <a
+              href="https://www.aquasec.com/cloud-native-academy/devsecops/"
+              target="_blank"
+              >DevSecOps Best Practices - Aqua Security</a
+            >
+          </article>
+
+          <article class="mb-5">
+            <h3>Intelligence Artificielle et cybersécurité</h3>
+            <h3>
+              L'IA : une arme à double tranchant pour la détection et
+              l'exploitation
+            </h3>
+            <p>
+              L'IA révolutionne la détection des menaces via les systèmes
+              IDS/IPS neurologiques. Cependant, elle est aussi utilisée pour
+              générer des attaques plus sophistiquées (phishing amélioré,
+              reverse engineering). La cybersécurité IA doit balancer détection
+              précoce et défense contre les attaques IA.
+            </p>
+            <a href="https://www.darktrace.com" target="_blank"
+              >Darktrace - Cyber AI Research Lab</a
+            >
           </article>
         </div>
       </section>
