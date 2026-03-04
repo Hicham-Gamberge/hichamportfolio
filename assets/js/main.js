@@ -203,4 +203,29 @@
 
   });
 
+  /**
+   * Veille cards - Make entire card clickable
+   */
+  const veillecards = document.querySelectorAll('.veille-card');
+  veillecards.forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', function(e) {
+      // Don't trigger if clicking on the link itself (let it work normally)
+      if (e.target.tagName === 'A') {
+        return;
+      }
+      // Find the link inside the card
+      const link = this.querySelector('.veille-title');
+      if (link && link.href) {
+        // Check if middle click or Ctrl+Click to open in new tab
+        if (e.ctrlKey || e.metaKey || e.button === 1) {
+          window.open(link.href, '_blank');
+        } else {
+          // Normal click - navigate in same tab
+          window.location.href = link.href;
+        }
+      }
+    });
+  });
+
 })();
