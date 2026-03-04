@@ -35,7 +35,7 @@
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">À propos</a></li>
-            <li><a href="resume.html">CV</a></li>
+            <li><a href="competences.html">Compétences</a></li>
             <li><a href="ProjetBTS.html">Projets</a></li>
             <li><a href="veille.html" class="active">Veille</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -54,7 +54,7 @@
                 <h1>Veille technologique</h1>
                 <p class="mb-0">
                   Résumé d'articles, outils et réflexions autour du
-                  développement et de l'infrastructure.
+                  développement et de la cybersécurité.
                 </p>
               </div>
             </div>
@@ -85,152 +85,201 @@
             </p>
           </article>
 
-          <article class="mb-5">
-            <h3>OWASP Top 10 2024</h3>
-            <h3>
-              Injection SQL et XSS : les vulnérabilités au cœur des attaques web
-            </h3>
-            <p>
-              L'OWASP Top 10 2024 identifie les 10 vulnérabilités web les plus
-              critiques. Les injections SQL et les failles XSS (Cross-Site
-              Scripting) restent les plus exploitées, permettant aux attaquants
-              d'accéder à des données sensibles et de prendre le contrôle des
-              sessions utilisateurs. La validation des entrées est essentielle.
-            </p>
-            <a href="https://owasp.org/www-project-top-ten/" target="_blank"
-              >Consulter le classement OWASP Top 10 2024</a
-            >
-          </article>
+          <!-- Grille de cartes veille -->
+          <div class="veille-grid">
+            <!-- Carte 1: OWASP Top 10 -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="veille-image">
+                <img src="assets/img/veille1.png" alt="OWASP Top 10 2024" />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">Vulnérabilités Web</span>
+                <a
+                  href="https://owasp.org/Top10/2025/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  OWASP Top 10 2025
+                </a>
+                <p class="veille-description">
+                  Les injections SQL et XSS restent les vulnérabilités web les
+                  plus critiques. Apprenez à les identifier et corriger.
+                </p>
+                <span class="veille-date">Janvier 2025</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>Sécurisation des API REST</h3>
-            <h3>
-              Protéger les API contre l'authentification faible et les accès non
-              autorisés
-            </h3>
-            <p>
-              Les API RESTful sont des vecteurs d'attaque majeurs. Une
-              authentification et une autorisation inadéquates exposent les
-              données. Les spécifications OAuth 2.0 et OpenID Connect sont
-              essentielles. L'utilisation de tokens JWT, le rate limiting et la
-              validation des requêtes diminuent les risques d'exploitation.
-            </p>
-            <a
-              href="https://owasp.org/www-project-api-security/"
-              target="_blank"
-              >OWASP API Security Top 10</a
-            >
-          </article>
+            <!-- Carte 2: Sécurisation des API REST -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="150">
+              <div class="veille-image">
+                <img src="assets/img/veille2.png" alt="Sécurité des API REST" />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">Sécurité API</span>
+                <a
+                  href="https://owasp.org/www-project-api-security/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  Sécurisation des API REST
+                </a>
+                <p class="veille-description">
+                  OAuth 2.0, JWT et bonnes pratiques pour protéger vos API
+                  contre les accès non autorisés.
+                </p>
+                <span class="veille-date">Décembre 2024</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>
-              Authentification multi-facteurs (MFA) et gestion des identités
-            </h3>
-            <h3>Renforcer l'authentification au-delà du simple mot de passe</h3>
-            <p>
-              L'authentification multi-facteurs réduit drastiquement les risques
-              de compromission de compte. La mise en place de TOTP (Time-based
-              One-Time Password), de biométrie ou de clés de sécurité FIDO2 est
-              désormais critique. La gestion centralisée des identités via des
-              services comme Keycloak ou Auth0 simplifie la sécurité.
-            </p>
-            <a
-              href="https://www.nist.gov/publications/special-publication-800-63-3"
-              target="_blank"
-              >NIST Digital Identity Guidelines</a
-            >
-          </article>
+            <!-- Carte 3: Authentification Multi-Facteurs -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="veille-image">
+                <img
+                  src="assets/img/veille3.png"
+                  alt="Authentification Multi-Facteurs"
+                />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">Authentification</span>
+                <a
+                  href="https://www.nist.gov/publications/special-publication-800-63-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  Authentification Multi-Facteurs (MFA)
+                </a>
+                <p class="veille-description">
+                  TOTP, biométrie et clés FIDO2 : techniques essentielles pour
+                  renforcer vos authentifications.
+                </p>
+                <span class="veille-date">Novembre 2024</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>Sécurité des frameworks modernes</h3>
-            <h3>
-              React, Node.js et Laravel : vulnérabilités et bonnes pratiques
-            </h3>
-            <p>
-              Chaque framework pose des défis spécifiques. React doit gérer
-              l'injection XSS dans le DOM, Node.js doit sécuriser les
-              dépendances npm, Laravel doit protéger ses routes contre les CSRF.
-              Les mises à jour régulières, l'audit des dépendances avec outils
-              comme Snyk et SonarQube, et le suivi des CVE sont indispensables.
-            </p>
-            <a href="https://snyk.io" target="_blank"
-              >Snyk - Plateforme de sécurité des dépendances</a
-            >
-          </article>
+            <!-- Carte 4: Sécurité des Frameworks -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="250">
+              <div class="veille-image">
+                <img
+                  src="assets/img/veille4.png"
+                  alt="Sécurité des Frameworks"
+                />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">Sécurité Framework</span>
+                <a
+                  href="https://snyk.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  Sécurité des Frameworks Modernes
+                </a>
+                <p class="veille-description">
+                  React, Node.js et Laravel : vulnérabilités spécifiques et
+                  bonnes pratiques de sécurisation.
+                </p>
+                <span class="veille-date">Octobre 2024</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>Vulnérabilités récentes et CVE critiques 2024-2026</h3>
-            <h3>
-              Exploits qui ont marqué l'industrie : Log4Shell, Heartbleed,
-              0-days
-            </h3>
-            <p>
-              Les vulnérabilités comme Log4Shell (CVE-2021-44228) ont exposé des
-              millions de serveurs. En 2024-2026, les 0-days dans les
-              dépendances populaires et les cloud providers restent une menace
-              majeure. La surveillance proactive des CVE et les patches de
-              sécurité immédiats sont critiques pour la continuité des services.
-            </p>
-            <a href="https://nvd.nist.gov" target="_blank"
-              >National Vulnerability Database (NVD)</a
-            >
-          </article>
+            <!-- Carte 5: CVE et Vulnérabilités -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="300">
+              <div class="veille-image">
+                <img src="assets/img/veille5.png" alt="CVE et Vulnérabilités" />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">CVE & Exploits</span>
+                <a
+                  href="https://nvd.nist.gov"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  Vulnérabilités Récentes et CVE Critiques
+                </a>
+                <p class="veille-description">
+                  Log4Shell, Heartbleed et 0-days : surveillance et patches de
+                  sécurité pour rester protégé.
+                </p>
+                <span class="veille-date">Septembre 2024</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>RGPD et protection des données personnelles</h3>
-            <h3>
-              Conformité légale et impact commercial de la protection des
-              données
-            </h3>
-            <p>
-              Le RGPD impose le chiffrement des données sensibles, le droit à
-              l'oubli et la minimisation des données collectées. Les amendes
-              peuvent atteindre 4% du chiffre d'affaires. Le Privacy by Design
-              doit être intégré au développement. Les audits réguliers et la
-              documentation des traitements sont obligatoires.
-            </p>
-            <a href="https://www.cnil.fr" target="_blank"
-              >CNIL - Commission Nationale de l'Informatique et des Libertés</a
-            >
-          </article>
+            <!-- Carte 6: RGPD -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="350">
+              <div class="veille-image">
+                <img
+                  src="assets/img/veille6.png"
+                  alt="RGPD et Protection des Données"
+                />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">Conformité & Réglementation</span>
+                <a
+                  href="https://www.cnil.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  RGPD et Protection des Données
+                </a>
+                <p class="veille-description">
+                  Chiffrement, droit à l'oubli et audit : se conformer au RGPD
+                  pour éviter les amendes.
+                </p>
+                <span class="veille-date">Août 2024</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>DevSecOps : intégrer la sécurité dans le CI/CD</h3>
-            <h3>
-              Automatiser les tests de sécurité sans ralentir les déploiements
-            </h3>
-            <p>
-              DevSecOps intègre les contrôles de sécurité dans chaque étape du
-              pipeline CI/CD. Les outils comme SonarQube (analyse statique),
-              Trivy (scan des conteneurs) et Burp Suite (tests dynamiques)
-              détectent les failles avant la production. L'Infrastructure as
-              Code doit aussi être sécurisée via des outils comme Terraform
-              Cloud.
-            </p>
-            <a
-              href="https://www.aquasec.com/cloud-native-academy/devsecops/"
-              target="_blank"
-              >DevSecOps Best Practices - Aqua Security</a
-            >
-          </article>
+            <!-- Carte 7: DevSecOps -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="400">
+              <div class="veille-image">
+                <img src="assets/img/veille7.png" alt="DevSecOps" />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">CI/CD & DevOps</span>
+                <a
+                  href="https://www.aquasec.com/cloud-native-academy/devsecops/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  DevSecOps : Sécurité dans le CI/CD
+                </a>
+                <p class="veille-description">
+                  Intégrez la sécurité dans chaque étape du pipeline avec
+                  SonarQube, Trivy et Burp Suite.
+                </p>
+                <span class="veille-date">Juillet 2024</span>
+              </div>
+            </div>
 
-          <article class="mb-5">
-            <h3>Intelligence Artificielle et cybersécurité</h3>
-            <h3>
-              L'IA : une arme à double tranchant pour la détection et
-              l'exploitation
-            </h3>
-            <p>
-              L'IA révolutionne la détection des menaces via les systèmes
-              IDS/IPS neurologiques. Cependant, elle est aussi utilisée pour
-              générer des attaques plus sophistiquées (phishing amélioré,
-              reverse engineering). La cybersécurité IA doit balancer détection
-              précoce et défense contre les attaques IA.
-            </p>
-            <a href="https://www.darktrace.com" target="_blank"
-              >Darktrace - Cyber AI Research Lab</a
-            >
-          </article>
+            <!-- Carte 8: IA et Cybersécurité -->
+            <div class="veille-card" data-aos="fade-up" data-aos-delay="450">
+              <div class="veille-image">
+                <img src="assets/img/veille8.png" alt="IA et Cybersécurité" />
+              </div>
+              <div class="veille-content">
+                <span class="veille-category">AI & Sécurité</span>
+                <a
+                  href="https://www.darktrace.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="veille-title"
+                >
+                  Intelligence Artificielle et Cybersécurité
+                </a>
+                <p class="veille-description">
+                  L'IA révolutionne la détection des menaces : défense contre
+                  les attaques IA sophistiquées.
+                </p>
+                <span class="veille-date">Juin 2024</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -238,14 +287,16 @@
     <footer id="footer" class="footer dark-background">
       <div class="container">
         <h3 class="sitename">Portfolio BTS SIO - BENNOUI Hicham</h3>
+        <p>Création, et développement — projets réalisés avec soin.</p>
         <div class="container">
           <div class="copyright">
             <span>©</span>
             <strong class="px-1 sitename"
-              >Portfolio BTS SIO - BENNOUI Hicham</strong
+              >Portfolio BTS SIO - Hicham BENNOUI</strong
             >
             <span>Tous droits réservés</span>
           </div>
+          <div class="credits">Designed by Hicham</div>
         </div>
       </div>
     </footer>

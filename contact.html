@@ -65,7 +65,7 @@
           <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="about.html">À propos</a></li>
-            <li><a href="resume.html">CV</a></li>
+            <li><a href="competences.html">Compétences</a></li>
             <li><a href="ProjetBTS.html">Projets</a></li>
             <li><a href="veille.html">Veille</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
@@ -105,134 +105,38 @@
       <!-- Contact Section -->
       <section id="contact" class="contact section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <i class="icon bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Adresse</h3>
-                  <p>12 Rue Exemple, 75000 Paris, France</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <i class="icon bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Téléphone</h3>
-                  <p>+33 1 23 45 67 89</p>
-                </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
-
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <i class="icon bi bi-envelope flex-shrink-0"></i>
-                <div>
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-6">
+              <div class="contact-content text-center">
+                <h2 class="contact-title">Restons en contact</h2>
+                <p class="contact-subtitle">N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.</p>
+                
+                <!-- Email Contact -->
+                <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                  <div class="contact-icon">
+                    <i class="bi bi-envelope"></i>
+                  </div>
                   <h3>Email</h3>
-                  <p>contact@monportfolio.fr</p>
+                  <a href="mailto:hichamcompteprofessionel@gmail.com" class="contact-email">hichamcompteprofessionel@gmail.com</a>
                 </div>
-              </div>
-            </div>
-            <!-- End Info Item -->
 
-            <div class="col-md-6">
-              <div
-                class="info-item d-flex align-items-center"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <i class="icon bi bi-share flex-shrink-0"></i>
-                <div>
-                  <h3>Réseaux sociaux</h3>
-                  <div class="social-links">
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-skype"></i></a>
-                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                <!-- Social Links -->
+                <div class="social-contact" data-aos="fade-up" data-aos-delay="300">
+                  <h3>Suivez-moi</h3>
+                  <div class="social-links-enhanced">
+                    <a href="https://github.com/Hicham-Gamberge" target="_blank" rel="noopener noreferrer" class="social-link github" title="GitHub">
+                      <i class="bi bi-github"></i>
+                      <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hicham-b-5bb754256" target="_blank" rel="noopener noreferrer" class="social-link linkedin" title="LinkedIn">
+                      <i class="bi bi-linkedin"></i>
+                      <span>LinkedIn</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- End Info Item -->
           </div>
-
-          <form
-            action="forms/contact.php"
-            method="post"
-            class="php-email-form"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="row gy-4">
-              <div class="col-md-6">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  placeholder="Votre nom"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-6">
-                <input
-                  type="email"
-                  class="form-control"
-                  name="email"
-                  placeholder="Votre email"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  name="subject"
-                  placeholder="Objet"
-                  required=""
-                />
-              </div>
-
-              <div class="col-md-12">
-                <textarea
-                  class="form-control"
-                  name="message"
-                  rows="6"
-                  placeholder="Votre message"
-                  required=""
-                ></textarea>
-              </div>
-
-              <div class="col-md-12 text-center">
-                <div class="loading">Envoi...</div>
-                <div class="error-message"></div>
-                <div class="sent-message">
-                  Votre message a été envoyé. Merci !
-                </div>
-
-                <button type="submit">Envoyer</button>
-              </div>
-            </div>
-          </form>
-          <!-- End Contact Form -->
         </div>
       </section>
       <!-- /Contact Section -->
@@ -240,16 +144,21 @@
 
     <footer id="footer" class="footer dark-background">
       <div class="container">
-        <h3 class="sitename">Personal</h3>
-        <p>
-          Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
-          eligendi fuga maxime saepe commodi placeat.
-        </p>
+        <h3 class="sitename">Portfolio BTS SIO - BENNOUI Hicham</h3>
+        <p>Création, et développement — projets réalisés avec soin.</p>
         <div class="container">
           <div class="copyright">
-            <span>©</span> <strong class="px-1 sitename">MonPortfolio</strong>
+            <span>©</span>
+            <strong class="px-1 sitename"
+              >Portfolio BTS SIO - Hicham BENNOUI</strong
+            >
             <span>Tous droits réservés</span>
           </div>
+          <div class="credits">Designed by Hicham</div>
+        </div>
+      </div>
+    </footer>
+
           <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you've purchased the pro version. -->
