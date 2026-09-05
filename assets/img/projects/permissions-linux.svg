@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Gestion stricte des permissions Linux</title>
+  <desc id="desc">Illustration d'un terminal Linux protege par un cadenas.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101936"/><stop offset="1" stop-color="#251047"/></linearGradient><linearGradient id="accent" x1="0" x2="1"><stop stop-color="#00d9ff"/><stop offset="1" stop-color="#d946ef"/></linearGradient></defs>
+  <rect width="1200" height="760" rx="28" fill="url(#bg)"/><circle cx="1010" cy="110" r="180" fill="#00d9ff" opacity=".08"/><circle cx="160" cy="690" r="230" fill="#d946ef" opacity=".08"/>
+  <rect x="110" y="140" width="720" height="430" rx="20" fill="#070b1e" stroke="#00d9ff" stroke-opacity=".45" stroke-width="3"/><circle cx="150" cy="180" r="9" fill="#ff5f57"/><circle cx="180" cy="180" r="9" fill="#febc2e"/><circle cx="210" cy="180" r="9" fill="#28c840"/>
+  <text x="155" y="260" fill="#00d9ff" font-family="monospace" font-size="30">$ chmod 750 secure.sh</text><text x="155" y="315" fill="#cbd5e1" font-family="monospace" font-size="28">drwxr-x---  admin  equipe</text><text x="155" y="380" fill="#d946ef" font-family="monospace" font-size="30">$ sudo audit-permissions</text><text x="155" y="440" fill="#94a3b8" font-family="monospace" font-size="25">access policy: strict / verified</text>
+  <rect x="850" y="275" width="220" height="190" rx="24" fill="#172347" stroke="url(#accent)" stroke-width="5"/><path d="M900 275v-42c0-55 120-55 120 0v42" fill="none" stroke="#00d9ff" stroke-width="22" stroke-linecap="round"/><rect x="945" y="345" width="30" height="60" rx="15" fill="#00d9ff"/><circle cx="960" cy="338" r="25" fill="#00d9ff"/><text x="108" y="670" fill="#f1f5f9" font-family="sans-serif" font-size="44" font-weight="700">PERMISSIONS LINUX</text>
+</svg>
